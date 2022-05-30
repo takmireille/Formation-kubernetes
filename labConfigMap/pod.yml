@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web
+spec:
+  containers:
+  - name: web
+    image: nginx:1.17
+    env:
+    - name: LOG_LEVEL
+      valueFrom:
+        configMapkeyRef:
+          name: config-env
+          key: env
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                          

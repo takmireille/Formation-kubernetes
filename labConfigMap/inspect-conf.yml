@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: inspect-conf 
+data:
+  inspect.conf: I
+    memory 2g
+    cpu 2 
+
